@@ -17,39 +17,16 @@ public class EmployeeDAO {
 
 	// Insert Employee
 	public void insertEmployee(Employee employee) {
-		String sql = "INSERT INTO Employee (name, department, salary) VALUES (?, ?, ?)";
-		jdbcTemplate.update(sql, employee.getName(), employee.getDepartment(), employee.getSalary());
+		//Write you logic here:
 	}
 
 	// Retrieve all employees
 	public List<Employee> getAllEmployees() {
-		String sql = "SELECT * FROM Employee";
-		return jdbcTemplate.query(sql, new RowMapper<Employee>() {
-			@Override
-			public Employee mapRow(java.sql.ResultSet rs, int rowNum) throws java.sql.SQLException {
-				Employee employee = new Employee();
-				employee.setId(rs.getInt("id"));
-				employee.setName(rs.getString("name"));
-				employee.setDepartment(rs.getString("department"));
-				employee.setSalary(rs.getDouble("salary"));
-				return employee;
-			}
-		});
+		//Write you logic here:
 	}
 
 	// Retrieve employee by ID
 	public Employee getEmployeeById(int id) {
-		String sql = "SELECT * FROM Employee WHERE id = ?";
-		return jdbcTemplate.queryForObject(sql, new Object[] { id }, new RowMapper<Employee>() {
-			@Override
-			public Employee mapRow(java.sql.ResultSet rs, int rowNum) throws java.sql.SQLException {
-				Employee employee = new Employee();
-				employee.setId(rs.getInt("id"));
-				employee.setName(rs.getString("name"));
-				employee.setDepartment(rs.getString("department"));
-				employee.setSalary(rs.getDouble("salary"));
-				return employee;
-			}
-		});
+		//Write you logic here:
 	}
 }
