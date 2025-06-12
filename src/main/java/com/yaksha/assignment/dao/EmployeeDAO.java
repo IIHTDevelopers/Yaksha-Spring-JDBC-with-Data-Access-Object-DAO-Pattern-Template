@@ -23,10 +23,12 @@ public class EmployeeDAO {
 	// Retrieve all employees
 	public List<Employee> getAllEmployees() {
 		//Write you logic here:
+		return null;
 	}
 
 	// Retrieve employee by ID
 	public Employee getEmployeeById(int id) {
 		//Write you logic here:
+		return null;
 	}
 }
