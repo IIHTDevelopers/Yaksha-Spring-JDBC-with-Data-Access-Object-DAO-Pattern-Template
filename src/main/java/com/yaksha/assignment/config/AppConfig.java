@@ -27,7 +27,7 @@ public class AppConfig {
 		dataSource.setUrl(
 				"jdbc:mysql://localhost:3306/employeedb?createDatabaseIfNotExist=true&useUnicode=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC");
 		dataSource.setUsername("root");
-		dataSource.setPassword("root");
+		dataSource.setPassword("pass@word1");
 		System.out.println("DataSource Initialized with URL: " + dataSource.getUrl());
 		return dataSource;
 	}
